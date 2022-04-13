@@ -1,0 +1,96 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: darkcyan;
+    background-image: url('./images/bg-pattern-top.svg'), url('./images/bg-pattern-bottom.svg');
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 50vw bottom 50vh, left 50vw top 50vh;
+    
+    
+}
+.main{
+    width: 350px;
+    height: 60%;
+    border-radius: 15px;
+    background-color: white;
+    overflow: hidden;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 35%;
+    background-image: url(./images/bg-pattern-card.svg);
+    background-size: cover;
+}
+.img-container{
+    margin-top: 85px;
+}
+.img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 5px solid white;
+}
+.section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 40%;
+    border-bottom: 1px solid rgb(196, 196, 196);
+    
+}
+.sectionName{
+    margin-top: 20px;
+    color: black;
+    font-weight: 700;
+    font-size: 22px;
+}
+.sectionName span{
+    color: grey;
+    font-weight: 500;
+    margin-left: 10px;
+}
+
+.footer{
+    height: 25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footer-followers{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.footer-likes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-photos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.title{
+    color: black;
+    font-weight: 700;
+    font-size: 22px;
+}
+.value{
+    color: grey;
+    font-weight: 500;
+    margin-left: 10px;
+    padding-top: 4px;
+}
+      
