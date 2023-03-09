@@ -2,9 +2,12 @@
 
 html {
   box-sizing: border-box;
+  font-size: 62.25%;
 }
 *, *:before, *:after {
   box-sizing: inherit;
+  margin: 0px;
+  padding: 0px;
 }
 
 :root{
@@ -16,24 +19,23 @@ html {
 }
 
 body{
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   font-family: 'Spartan', sans-serif;
-  font-size: 15px;
+  font-size: 1.5rem;
   background-image: url('./images/bg-pattern-top-desktop.svg'), url('./images/bg-pattern-bottom-desktop.svg');;
   background-repeat: no-repeat, no-repeat;
   
   
 }
-
 .container{
   display: flex;
   flex-direction: column;
-  width: 90%;
+  width: 92%;
   padding: 0px 30px;
 }
 
@@ -42,11 +44,14 @@ body{
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
+  height: 300px;
 }
 
 .intro-text{
   display: flex;
   flex-direction: column;
+  width: 44%;
+  height: 10%;
 }
 .intro-text-title{
   font-size: 36px;
@@ -66,45 +71,46 @@ body{
 .intro-ratings{
   display: flex;
   flex-direction: column;
+  width: 44%;
 }
 
-
+.intro-rating{
+  display: flex;
+  flex-direction: row;
+  background-color: var(--light-grayish-magenta);
+  flex-wrap: nowrap;
+  width: 100%;
+  height: 50px;
+  margin-top: 15px;
+  align-items: center;
+  border-radius: 10px;;
+}
 .intro-rating-stars{
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  width: 100%;
-  flex-wrap: nowrap;
-}
-.intro-rating-stars img{
-  display: block;
-}
-.intro-rating-1{
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
   align-items: center;
-  background-color: var(--light-grayish-magenta);
+  width: 40%;
+  margin: 0 10px 0 10px;
+  height: 100%;
+}
+.intro-rating-text{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
   flex-wrap: nowrap;
-  
+  width: 60%;
+  color: var(--very-dark-magenta);
+  font-weight: 6d00;
 }
-.intro-rating-1-text{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
+.intro-ratings .intro-rating:nth-child(1){
+  margin-right: 40px;
 }
-
-.intro-rating-2{
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: center;
+.intro-ratings .intro-rating:nth-child(1){
+  margin-right: 40px;
 }
-.intro-rating-3{
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: center;
+.intro-ratings .intro-rating:nth-child(1){
+  margin-right: 40px;
 }
 
 
@@ -112,7 +118,6 @@ body{
 
 
 
-/***     SHARED    ****/
 .comments{
   display: flex;
   flex-direction: row;
@@ -136,7 +141,7 @@ body{
 }
 
 
-/*****   COMMENTS  ******/
+
 
 .comment-info{
   display: flex;
@@ -164,3 +169,19 @@ body{
   .attribution a {
     color: hsl(228, 45%, 44%);
   }
+  
+
+   @media (max-width:1250px){
+    body{
+      
+    }
+    .intro{
+      background-color: red;
+    }
+    .comments{
+      margin-top: 400px;
+      display: flex;
+      flex-direction:column
+    }
+
+  } 
