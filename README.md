@@ -1,2 +1,2 @@
-# Challengues
-Challengues where I practied HTML,CSS,Javascript,Java,React,SQL Skills
+# Challenges
+Challenges where I practice my programming skills.
